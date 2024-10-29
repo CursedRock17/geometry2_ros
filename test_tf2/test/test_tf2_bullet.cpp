@@ -34,7 +34,7 @@
 #include <tf2_ros/buffer.h>
 #include <ros/ros.h>
 #include <gtest/gtest.h>
-#include <tf2/convert.h>
+#include <tf2/convert.hpp>
 
 tf2_ros::Buffer* tf_buffer;
 static const double EPS = 1e-3;

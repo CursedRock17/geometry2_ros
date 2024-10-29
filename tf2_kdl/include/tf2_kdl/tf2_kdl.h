@@ -32,7 +32,7 @@
 #ifndef TF2_KDL_H
 #define TF2_KDL_H
 
-#include <tf2/convert.h>
+#include <tf2/convert.hpp>
 #include <kdl/frames.hpp>
 #include <geometry_msgs/PointStamped.h>
 #include <geometry_msgs/TwistStamped.h>
@@ -74,7 +74,7 @@ geometry_msgs::TransformStamped kdlToTransform(const KDL::Frame& k)
 // Vector
 // ---------------------
 /** \brief Apply a geometry_msgs TransformStamped to an KDL-specific Vector type.
- * This function is a specialization of the doTransform template defined in tf2/convert.h.
+ * This function is a specialization of the doTransform template defined in tf2/convert.hpp.
  * \param t_in The vector to transform, as a timestamped KDL Vector data type.
  * \param t_out The transformed vector, as a timestamped KDL Vector data type.
  * \param transform The timestamped transform to apply, as a TransformStamped message.
@@ -87,7 +87,7 @@ inline
   }
 
 /** \brief Convert a stamped KDL Vector type to a PointStamped message.
- * This function is a specialization of the toMsg template defined in tf2/convert.h.
+ * This function is a specialization of the toMsg template defined in tf2/convert.hpp.
  * \param in The timestamped KDL Vector to convert.
  * \return The vector converted to a PointStamped message.
  */
@@ -104,7 +104,7 @@ geometry_msgs::PointStamped toMsg(const tf2::Stamped<KDL::Vector>& in)
 }
 
 /** \brief Convert a PointStamped message type to a stamped KDL-specific Vector type.
- * This function is a specialization of the fromMsg template defined in tf2/convert.h
+ * This function is a specialization of the fromMsg template defined in tf2/convert.hpp
  * \param msg The PointStamped message to convert.
  * \param out The point converted to a timestamped KDL Vector.
  */
@@ -122,7 +122,7 @@ void fromMsg(const geometry_msgs::PointStamped& msg, tf2::Stamped<KDL::Vector>& 
 // Twist
 // ---------------------
 /** \brief Apply a geometry_msgs TransformStamped to an KDL-specific Twist type.
- * This function is a specialization of the doTransform template defined in tf2/convert.h.
+ * This function is a specialization of the doTransform template defined in tf2/convert.hpp.
  * \param t_in The twist to transform, as a timestamped KDL Twist data type.
  * \param t_out The transformed Twist, as a timestamped KDL Frame data type.
  * \param transform The timestamped transform to apply, as a TransformStamped message.
@@ -135,7 +135,7 @@ inline
   }
 
 /** \brief Convert a stamped KDL Twist type to a TwistStamped message.
- * This function is a specialization of the toMsg template defined in tf2/convert.h.
+ * This function is a specialization of the toMsg template defined in tf2/convert.hpp.
  * \param in The timestamped KDL Twist to convert.
  * \return The twist converted to a TwistStamped message.
  */
@@ -155,7 +155,7 @@ geometry_msgs::TwistStamped toMsg(const tf2::Stamped<KDL::Twist>& in)
 }
 
 /** \brief Convert a TwistStamped message type to a stamped KDL-specific Twist type.
- * This function is a specialization of the fromMsg template defined in tf2/convert.h
+ * This function is a specialization of the fromMsg template defined in tf2/convert.hpp
  * \param msg The TwistStamped message to convert.
  * \param out The twist converted to a timestamped KDL Twist.
  */
@@ -177,7 +177,7 @@ void fromMsg(const geometry_msgs::TwistStamped& msg, tf2::Stamped<KDL::Twist>& o
 // Wrench
 // ---------------------
 /** \brief Apply a geometry_msgs TransformStamped to an KDL-specific Wrench type.
- * This function is a specialization of the doTransform template defined in tf2/convert.h.
+ * This function is a specialization of the doTransform template defined in tf2/convert.hpp.
  * \param t_in The wrench to transform, as a timestamped KDL Wrench data type.
  * \param t_out The transformed Wrench, as a timestamped KDL Frame data type.
  * \param transform The timestamped transform to apply, as a TransformStamped message.
@@ -190,7 +190,7 @@ inline
   }
 
 /** \brief Convert a stamped KDL Wrench type to a WrenchStamped message.
- * This function is a specialization of the toMsg template defined in tf2/convert.h.
+ * This function is a specialization of the toMsg template defined in tf2/convert.hpp.
  * \param in The timestamped KDL Wrench to convert.
  * \return The wrench converted to a WrenchStamped message.
  */
@@ -210,7 +210,7 @@ geometry_msgs::WrenchStamped toMsg(const tf2::Stamped<KDL::Wrench>& in)
 }
 
 /** \brief Convert a WrenchStamped message type to a stamped KDL-specific Wrench type.
- * This function is a specialization of the fromMsg template defined in tf2/convert.h
+ * This function is a specialization of the fromMsg template defined in tf2/convert.hpp
  * \param msg The WrenchStamped message to convert.
  * \param out The wrench converted to a timestamped KDL Wrench.
  */
@@ -234,7 +234,7 @@ void fromMsg(const geometry_msgs::WrenchStamped& msg, tf2::Stamped<KDL::Wrench>&
 // Frame
 // ---------------------
 /** \brief Apply a geometry_msgs TransformStamped to a KDL-specific Frame data type.
- * This function is a specialization of the doTransform template defined in tf2/convert.h.
+ * This function is a specialization of the doTransform template defined in tf2/convert.hpp.
  * \param t_in The frame to transform, as a timestamped KDL Frame.
  * \param t_out The transformed frame, as a timestamped KDL Frame.
  * \param transform The timestamped transform to apply, as a TransformStamped message.
@@ -247,7 +247,7 @@ inline
   }
 
 /** \brief Convert a stamped KDL Frame type to a Pose message.
- * This function is a specialization of the toMsg template defined in tf2/convert.h.
+ * This function is a specialization of the toMsg template defined in tf2/convert.hpp.
  * \param in The timestamped KDL Frame to convert.
  * \return The frame converted to a Pose message.
  */
@@ -263,7 +263,7 @@ geometry_msgs::Pose toMsg(const KDL::Frame& in)
 }
 
 /** \brief Convert a Pose message type to a KDL Frame.
- * This function is a specialization of the fromMsg template defined in tf2/convert.h.
+ * This function is a specialization of the fromMsg template defined in tf2/convert.hpp.
  * \param msg The Pose message to convert.
  * \param out The pose converted to a KDL Frame.
  */
@@ -277,7 +277,7 @@ void fromMsg(const geometry_msgs::Pose& msg, KDL::Frame& out)
 }
 
 /** \brief Convert a stamped KDL Frame type to a Pose message.
- * This function is a specialization of the toMsg template defined in tf2/convert.h.
+ * This function is a specialization of the toMsg template defined in tf2/convert.hpp.
  * \param in The timestamped KDL Frame to convert.
  * \return The frame converted to a PoseStamped message.
  */
@@ -292,7 +292,7 @@ geometry_msgs::PoseStamped toMsg(const tf2::Stamped<KDL::Frame>& in)
 }
 
 /** \brief Convert a Pose message transform type to a stamped KDL Frame.
- * This function is a specialization of the fromMsg template defined in tf2/convert.h.
+ * This function is a specialization of the fromMsg template defined in tf2/convert.hpp.
  * \param msg The PoseStamped message to convert.
  * \param out The pose converted to a timestamped KDL Frame.
  */

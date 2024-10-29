@@ -28,7 +28,7 @@
  */
 
 #include <gtest/gtest.h>
-#include <tf2/time_cache.h>
+#include <tf2/time_cache.hpp>
 #include <stdexcept>
 
 #include <geometry_msgs/TransformStamped.h>

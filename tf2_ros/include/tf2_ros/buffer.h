@@ -33,10 +33,10 @@
 #define TF2_ROS_BUFFER_H
 
 #include <tf2_ros/buffer_interface.h>
-#include <tf2/buffer_core.h>
+#include <tf2/buffer_core.hpp>
 #include <tf2_msgs/FrameGraph.h>
 #include <ros/ros.h>
-#include <tf2/convert.h>
+#include <tf2/convert.hpp>
 
 
 namespace tf2_ros

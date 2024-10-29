@@ -32,12 +32,12 @@
 #ifndef TF2_ROS_BUFFER_INTERFACE_H
 #define TF2_ROS_BUFFER_INTERFACE_H
 
-#include <tf2/buffer_core.h>
-#include <tf2/transform_datatypes.h>
-#include <tf2/exceptions.h>
+#include <tf2/buffer_core.hpp>
+#include <tf2/transform_datatypes.hpp>
+#include <tf2/exceptions.hpp>
 #include <geometry_msgs/TransformStamped.h>
 #include <sstream>
-#include <tf2/convert.h>
+#include <tf2/convert.hpp>
 
 namespace tf2_ros
 {

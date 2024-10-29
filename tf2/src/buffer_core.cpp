@@ -29,14 +29,14 @@
 
 /** \author Tully Foote */
 
-#include "tf2/buffer_core.h"
-#include "tf2/time_cache.h"
-#include "tf2/exceptions.h"
+#include "tf2/buffer_core.hpp"
+#include "tf2/time_cache.hpp"
+#include "tf2/exceptions.hpp"
 #include "tf2_msgs/TF2Error.h"
 
 #include <assert.h>
 #include <console_bridge/console.h>
-#include "tf2/LinearMath/Transform.h"
+#include "tf2/LinearMath/Transform.hpp"
 #include <boost/foreach.hpp>
 #include <boost/tuple/tuple.hpp>
 

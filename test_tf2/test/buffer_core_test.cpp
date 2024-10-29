@@ -29,8 +29,8 @@
 
 #include <cmath>
 #include <gtest/gtest.h>
-#include <tf2/buffer_core.h>
-#include "tf2/exceptions.h"
+#include <tf2/buffer_core.hpp>
+#include "tf2/exceptions.hpp"
 #include <ros/ros.h>
 #include "LinearMath/btVector3.h"
 #include "LinearMath/btTransform.h"

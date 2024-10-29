@@ -33,10 +33,10 @@
 #define TF2_CONVERT_H
 
 
-#include <tf2/transform_datatypes.h>
-#include <tf2/exceptions.h>
+#include <tf2/transform_datatypes.hpp>
+#include <tf2/exceptions.hpp>
 #include <geometry_msgs/TransformStamped.h>
-#include <tf2/impl/convert.h>
+#include <tf2/impl/convert.hpp>
 
 namespace tf2 {
 

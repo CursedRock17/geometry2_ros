@@ -16,8 +16,8 @@
 #define TF2_IMPL_UTILS_H
 
 #include <tf2_geometry_msgs/tf2_geometry_msgs.h>
-#include <tf2/transform_datatypes.h>
-#include <tf2/LinearMath/Quaternion.h>
+#include <tf2/transform_datatypes.hpp>
+#include <tf2/LinearMath/Quaternion.hpp>
 
 namespace tf2 {
 namespace impl {

@@ -31,7 +31,7 @@
 
 
 #include <tf2_ros/message_filter.h>
-#include <tf2/buffer_core.h>
+#include <tf2/buffer_core.hpp>
 #include <geometry_msgs/PointStamped.h>
 #include <boost/bind/bind.hpp>
 #include <boost/scoped_ptr.hpp>

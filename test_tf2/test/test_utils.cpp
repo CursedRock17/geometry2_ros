@@ -13,7 +13,7 @@
 // limitations under the License.
 
 #include <gtest/gtest.h>
-#include <tf2/utils.h>
+#include <tf2/utils.hpp>
 #include <tf2_kdl/tf2_kdl.h>
 #include <tf2_geometry_msgs/tf2_geometry_msgs.h>
 #include <ros/time.h>

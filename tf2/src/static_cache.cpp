@@ -29,10 +29,10 @@
 
 /** \author Tully Foote */
 
-#include "tf2/time_cache.h"
-#include "tf2/exceptions.h"
+#include "tf2/time_cache.hpp"
+#include "tf2/exceptions.hpp"
 
-#include "tf2/LinearMath/Transform.h"
+#include "tf2/LinearMath/Transform.hpp"
 
 
 using namespace tf2;

@@ -32,7 +32,7 @@
 #ifndef TF2_ROS_MESSAGE_FILTER_H
 #define TF2_ROS_MESSAGE_FILTER_H
 
-#include <tf2/buffer_core.h>
+#include <tf2/buffer_core.hpp>
 
 #include <string>
 #include <list>

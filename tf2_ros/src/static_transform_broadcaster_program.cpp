@@ -28,7 +28,7 @@
  */
 
 #include <cstdio>
-#include <tf2/LinearMath/Quaternion.h>
+#include <tf2/LinearMath/Quaternion.hpp>
 #include "tf2_ros/static_transform_broadcaster.h"
 
 

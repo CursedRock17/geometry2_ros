@@ -27,7 +27,7 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <tf2/buffer_core.h>
+#include <tf2/buffer_core.hpp>
 
 #include <ros/time.h>
 #include <console_bridge/console.h>

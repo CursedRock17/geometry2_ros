@@ -32,7 +32,7 @@
 
 #include <tf2_bullet/tf2_bullet.h>
 #include <gtest/gtest.h>
-#include <tf2/convert.h>
+#include <tf2/convert.hpp>
 
 static const double EPS = 1e-3;
 

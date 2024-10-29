@@ -28,10 +28,10 @@
  */
 
 #include <gtest/gtest.h>
-#include <tf2/buffer_core.h>
+#include <tf2/buffer_core.hpp>
 #include <ros/time.h>
-#include "tf2/LinearMath/Vector3.h"
-#include "tf2/exceptions.h"
+#include "tf2/LinearMath/Vector3.hpp"
+#include "tf2/exceptions.hpp"
 
 TEST(tf2, setTransformFail)
 {

@@ -29,7 +29,7 @@
 
 #include <tf2_eigen/tf2_eigen.h>
 #include <gtest/gtest.h>
-#include <tf2/convert.h>
+#include <tf2/convert.hpp>
 
 TEST(TfEigen, ConvertVector3dStamped)
 {

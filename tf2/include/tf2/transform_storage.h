@@ -32,8 +32,8 @@
 #ifndef TF2_TRANSFORM_STORAGE_H
 #define TF2_TRANSFORM_STORAGE_H
 
-#include <tf2/LinearMath/Vector3.h>
-#include <tf2/LinearMath/Quaternion.h>
+#include <tf2/LinearMath/Vector3.hpp>
+#include <tf2/LinearMath/Quaternion.hpp>
 
 #include <ros/message_forward.h>
 #include <ros/time.h>

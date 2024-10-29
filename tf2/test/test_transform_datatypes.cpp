@@ -28,7 +28,7 @@
  */
 #include <gtest/gtest.h>
 
-#include "tf2/transform_datatypes.h"
+#include "tf2/transform_datatypes.hpp"
 
 #include <string>
 
